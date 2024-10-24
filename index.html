@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/1.0.3.loader.js"></script>
+    <script src="Build/car_showroom.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,13 +25,13 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/1.0.3.data",
-        frameworkUrl: "Build/1.0.3.framework.js",
-        codeUrl: "Build/1.0.3.wasm",
+        dataUrl: "Build/car_showroom.data",
+        frameworkUrl: "Build/car_showroom.framework.js",
+        codeUrl: "Build/car_showroom.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "car_showroom",
-        productVersion: "1.0.3",
+        productVersion: "1.0.4",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
